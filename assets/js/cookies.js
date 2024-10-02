@@ -4,22 +4,23 @@
         const cookieConsent = localStorage.getItem('cookieConsent');
 
         if (!cookieConsent) {
-            $('#cookie-banner').css('display', 'flex');
+            $('#banner-cookies').css('display', 'flex');
         }
     }
 
     // Función para manejar la aceptación de cookies
     function acceptCookies() {
         localStorage.setItem('cookieConsent', 'accepted');
-        $('#cookie-banner').css('display', 'none');
+        $('#banner-cookies').css('display', 'none');
         // Aquí puedes añadir el código para habilitar cookies de seguimiento si es necesario
     }
 
     // Función para manejar la denegación de cookies
     function denyCookies() {
         localStorage.setItem('cookieConsent', 'denied');
-        $('#cookie-banner').css('display', 'none');
+        $('#banner-cookies').css('display', 'none');
         // Aquí puedes añadir el código para desactivar cookies si es necesario
+        alert("No se utilizaran las cookies");
     }
 
     // Escuchar eventos en los botones del banner
