@@ -5,7 +5,7 @@
 
         if (!cookieConsent) {
             console.log("No hay cookies");
-            $('#banner_cookies').css('display', 'flex');
+            $('.banner-cookies').css('display', 'flex');
         }
         console.log("Si hay cookies");
     }
