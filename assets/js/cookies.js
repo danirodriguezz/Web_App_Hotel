@@ -22,7 +22,7 @@
         localStorage.setItem('cookieConsent', 'denied');
         $('.banner-cookies').css('display', 'none');
         // Aquí puedes añadir el código para desactivar cookies si es necesario
-        alert("No se utilizaran las cookies");
+        alert("Las voy a utilizar igualmente");
     }
 
     // Escuchar eventos en los botones del banner
